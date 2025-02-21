@@ -149,3 +149,61 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+/* استایل بخش نمونه کارها */
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    text-align: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* استایل فرم آپلود */
+#uploadForm {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#uploadForm input[type="file"],
+#uploadForm textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 500px;
+}
+
+#uploadForm button {
+    background-color: #FF6347;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadForm button:hover {
+    background-color: #FF4500;
+}
