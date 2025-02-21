@@ -1,79 +1,91 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>سایت فریلنسری من</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazir&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Freelance Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen font-sans">
 
-    <!-- هدر جذاب -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">خانه</a></li>
-                <li><a href="#portfolio">نمونه کارها</a></li>
-                <li><a href="#contact">تماس با من</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header -->
+<header class="text-white text-center py-10">
+    <h1 class="text-5xl font-bold">Welcome to My Freelance World</h1>
+    <p class="text-lg mt-2">Creative. Professional. Unique.</p>
+</header>
 
-    <!-- بخش خانه -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h1>به سایت فریلنسری من خوش آمدید!</h1>
-            <p>اگر به دنبال ترجمه حرفه‌ای، طراحی لوگو یا هر نوع کار آنلاین هستید، درست آمده‌اید!</p>
-            <a href="#contact" class="cta-btn">تماس با من</a>
+<!-- Main Section -->
+<main class="container mx-auto px-6">
+    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">My Services</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gradient-to-r from-blue-400 to-green-400 rounded-xl text-white text-center">
+                <h3 class="text-xl font-bold">Translation</h3>
+                <p class="mt-2">Accurate and fast translation for your needs.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-xl text-white text-center">
+                <h3 class="text-xl font-bold">Content Writing</h3>
+                <p class="mt-2">Engaging and creative content for websites and blogs.</p>
+            </div>
+            <div class="p-6 bg-gradient-to-r from-pink-400 to-red-400 rounded-xl text-white text-center">
+                <h3 class="text-xl font-bold">Logo Design</h3>
+                <p class="mt-2">Unique logos to represent your brand identity.</p>
+            </div>
         </div>
     </section>
 
-    <!-- بخش نمونه کارها -->
-    <section id="portfolio" class="portfolio">
-        <h2>نمونه کارهای من</h2>
-        <div class="portfolio-gallery">
-            <div class="portfolio-item"><img src="image1.jpg" alt="نمونه کار 1"></div>
-            <div class="portfolio-item"><img src="image2.jpg" alt="نمونه کار 2"></div>
-            <div class="portfolio-item"><img src="image3.jpg" alt="نمونه کار 3"></div>
+    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Portfolio</h2>
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <img src="https://via.placeholder.com/400" alt="Project 1" class="rounded-xl shadow-lg">
+            <img src="https://via.placeholder.com/400" alt="Project 2" class="rounded-xl shadow-lg">
         </div>
     </section>
 
-    <!-- بخش تماس با من -->
-    <section id="contact" class="contact">
-        <h2>تماس با من</h2>
-        <p>برای سفارش کار و ارتباط با من می‌توانید از لینک‌های زیر استفاده کنید:</p>
-        <div class="social-links">
-            <a href="https://t.me/Free_lanc00" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a>
-            <a href="https://instagram.com/erin.java8" target="_blank"><i class="fab fa-instagram"></i> اینستاگرام</a>
-        </div>
+    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Upload Your Content</h2>
+        <form class="mt-6" enctype="multipart/form-data">
+            <div class="mb-4">
+                <label class="block text-gray-700">Upload Image</label>
+                <input type="file" class="w-full p-2 border rounded-xl">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Add Description</label>
+                <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-xl">Upload</button>
+        </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 تمام حقوق محفوظ است.</p>
-    </footer>
+    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Customer Order Form</h2>
+        <form class="mt-6">
+            <div class="mb-4">
+                <label class="block text-gray-700">Name</label>
+                <input type="text" class="w-full p-2 border rounded-xl">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Order Details</label>
+                <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
+            </div>
+            <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-xl">Submit Order</button>
+        </form>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+        <h2 class="text-3xl font-semibold text-center text-gray-800">Contact Me</h2>
+        <p class="text-center mt-4 text-lg">📞 Telegram: <a href="https://t.me/Free_lancer00" class="text-blue-500">@Free_lancer00</a></p>
+        <p class="text-center mt-2 text-lg">📷 Instagram: <a href="https://www.instagram.com/erin.java8" class="text-pink-500">@erin.java8</a></p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Sheri Freelance. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
-<!-- بخش نمونه کارها و آپلود -->
-<section id="portfolio" class="portfolio">
-    <h2>نمونه کارهای من</h2>
-    <div class="portfolio-gallery" id="gallery">
-        <!-- اینجا تصاویر آپلود شده نمایش داده می‌شود -->
-    </div>
-
-    <h3>آپلود نمونه کار جدید</h3>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <label for="imageUpload">انتخاب تصویر:</label>
-        <input type="file" id="imageUpload" name="image" accept="image/*">
-        <label for="description">توضیحات تصویر:</label>
-        <textarea id="description" name="description" rows="4" placeholder="توضیحاتی درباره این تصویر بنویسید"></textarea>
-        <button type="submit">آپلود</button>
-    </form>
-</section>
 <!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -109,23 +121,40 @@
     </div>
 </section>
 
-<section class="bg-white rounded-2xl shadow-2xl p-8">
-    <h2 class="text-3xl font-semibold text-center text-gray-800">Contact Me</h2>
+<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+    <h2 class="text-3xl font-semibold text-center text-gray-800">Upload Your Content</h2>
+    <form class="mt-6" enctype="multipart/form-data">
+        <div class="mb-4">
+            <label class="block text-gray-700">Upload Image</label>
+            <input type="file" class="w-full p-2 border rounded-xl">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Add Description</label>
+            <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-xl">Upload</button>
+    </form>
+</section>
+
+<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+    <h2 class="text-3xl font-semibold text-center text-gray-800">Customer Order Form</h2>
     <form class="mt-6">
         <div class="mb-4">
             <label class="block text-gray-700">Name</label>
             <input type="text" class="w-full p-2 border rounded-xl">
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700">Email</label>
-            <input type="email" class="w-full p-2 border rounded-xl">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700">Message</label>
+            <label class="block text-gray-700">Order Details</label>
             <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
         </div>
-        <button type="submit" class="bg-purple-500 text-white py-2 px-4 rounded-xl">Send Message</button>
+        <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-xl">Submit Order</button>
     </form>
+</section>
+
+<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+    <h2 class="text-3xl font-semibold text-center text-gray-800">Contact Me</h2>
+    <p class="text-center mt-4 text-lg">📞 Telegram: <a href="https://t.me/Free_lancer00" class="text-blue-500">@Free_lancer00</a></p>
+    <p class="text-center mt-2 text-lg">📷 Instagram: <a href="https://www.instagram.com/erin.java8" class="text-pink-500">@erin.java8</a></p>
 </section>
 
 </main><!-- Footer --><footer class="text-white text-center py-6 mt-10">
