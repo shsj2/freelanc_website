@@ -16,3 +16,13 @@ document.getElementById('uploadForm').addEventListener('submit', function(e) {
         reader.readAsDataURL(image);
     }
 });
+// پیش‌نمایش عکس آپلود شده
+function previewImage(event) {
+    const reader = new FileReader();
+    reader.onload = function () {
+        const preview = document.getElementById('previewImage');
+        preview.src = reader.result;
+        preview.style.display = 'block';  // نمایش تصویر
+    }
+    reader.readAsDataURL(event.target.files[0]);
+}
