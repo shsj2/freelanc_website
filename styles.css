@@ -1,21 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    direction: rtl;
-    text-align: right;
     margin: 0;
     padding: 0;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('logos-background.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96c93d);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
     min-height: 100vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 header {
@@ -23,23 +29,37 @@ header {
     margin-bottom: 40px;
 }
 
-header h1 {
+.animated-title {
     font-size: 2.5em;
-    margin: 0;
+    margin: 10px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 header p {
     font-size: 1.2em;
-    color: #ddd;
+    color: #fff;
+    margin: 5px 0;
 }
 
 .services, .socials, .order-form {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 20px 0;
     width: 80%;
-    max-width: 600px;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.services h2, .socials h2, .order-form h2 {
+    color: #ffeb3b;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .services ul {
@@ -48,17 +68,26 @@ header p {
 }
 
 .services li {
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 1.1em;
+    padding: 10px;
+    background: linear-gradient(90deg, #ff6b6b, #feca57);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.services li:hover {
+    transform: scale(1.05);
 }
 
 .socials a {
-    color: #00ccff;
+    color: #00e676;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .socials a:hover {
-    text-decoration: underline;
+    color: #ffeb3b;
 }
 
 .order-form form {
@@ -68,37 +97,51 @@ header p {
 
 .order-form input, .order-form textarea {
     margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid #ffeb3b;
+    border-radius: 8px;
     font-size: 1em;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.order-form input::placeholder, .order-form textarea::placeholder {
+    color: #ddd;
 }
 
 .order-form textarea {
-    height: 100px;
+    height: 120px;
     resize: none;
 }
 
 .order-form button {
-    padding: 10px;
-    background-color: #00ccff;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff6b6b, #feca57);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     font-size: 1.1em;
     cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .order-form button:hover {
-    background-color: #0099cc;
+    transform: scale(1.1);
+}
+
+.en {
+    font-family: 'Arial', sans-serif;
+    direction: ltr;
+    text-align: left;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
 }
