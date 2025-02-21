@@ -323,3 +323,72 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+/* بخش آپلود عکس */
+.upload {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.upload h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.upload p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-area {
+    background-color: #f9f9f9;
+    border: 2px dashed #00BFFF;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #e0f7fa;
+}
+
+.upload-label {
+    font-size: 20px;
+    color: #00BFFF;
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #00BFFF;
+    color: #fff;
+}
+
+#imagePreview {
+    margin-top: 20px;
+}
+
+#previewImage {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+}
