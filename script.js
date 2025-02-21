@@ -1,4 +1,4 @@
-document.getElementById('uploadForm').addEventListener('submit', function (e) {
+document.getElementById('uploadForm').addEventListener('submit', function(e) {
     e.preventDefault(); // جلوگیری از ارسال فرم به صورت معمولی
     
     var text = document.getElementById('text').value; // گرفتن متن وارد شده
