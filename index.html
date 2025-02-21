@@ -3,201 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>سایت فریلنسری من</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazir&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- هدر جذاب -->
     <header>
-        <div class="logo">
-            <h1>سایت فریلنسری من</h1>
-        </div>
         <nav>
             <ul>
                 <li><a href="#home">خانه</a></li>
                 <li><a href="#portfolio">نمونه کارها</a></li>
-                <li><a href="#about">درباره من</a></li>
                 <li><a href="#contact">تماس با من</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>خوش آمدید به سایت من</h2>
-        <p>من Sheri هستم، یک فریلنسر با تجربه در زمینه ترجمه، طراحی لوگو و ساخت محتوای دیجیتال. در اینجا می‌توانید نمونه کارهای من را مشاهده کنید و با من در ارتباط باشید.</p>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>نمونه کارها</h2>
-        <div class="portfolio-item">
-            <img src="sample1.jpg" alt="نمونه کار 1">
-            <p>ترجمه مقاله</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="sample2.jpg" alt="نمونه کار 2">
-            <p>طراحی لوگو</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="sample3.jpg" alt="نمونه کار 3">
-            <p>نوشتن محتوا</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>درباره من</h2>
-        <p>من چندین سال تجربه در زمینه‌های مختلف فریلنسری دارم و از طریق سایت‌های آنلاین کار می‌کنم. من آماده‌ام که پروژه‌های شما را با بهترین کیفیت انجام دهم.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>تماس با من</h2>
-        <p>برای سفارش کار یا هرگونه سوال، می‌توانید از طریق تلگرام یا اینستاگرام با من در تماس باشید.</p>
-        <div class="social-links">
-            <a href="https://t.me/your-telegram-link" target="_blank">تلگرام</a>
-            <a href="https://instagram.com/your-instagram-link" target="_blank">اینستاگرام</a>
-        </div>
-        <form action="" method="POST">
-            <label for="name">نام شما:</label>
-            <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید" required>
-            <label for="message">پیام شما:</label>
-            <textarea id="message" name="message" placeholder="پیام خود را بنویسید" required></textarea>
-            <button type="submit">ارسال</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sheri. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
-<!-- قسمتی برای آپلود عکس و متن -->
-<section id="upload-section">
-    <h2>آپلود نمونه کار</h2>
-    <form id="uploadForm" enctype="multipart/form-data">
-        <label for="image">تصویر:</label>
-        <input type="file" id="image" name="image" accept="image/*" required><br><br>
-
-        <label for="text">متن:</label>
-        <input type="text" id="text" name="text" placeholder="متن خود را وارد کنید" required><br><br>
-
-        <button type="submit">آپلود</button>
-    </form>
-
-    <div id="uploaded-content">
-        <h3>محتوای آپلود شده:</h3>
-        <div id="uploaded-image-container">
-            <img id="uploaded-image" src="" alt="تصویر آپلود شده" />
-        </div>
-        <p id="uploaded-text"></p>
-    </div>
-</section>
-<!-- لینک به شبکه‌های اجتماعی -->
-<section id="social-media">
-    <h2>با من در ارتباط باشید</h2>
-    <div class="social-icons">
-        <!-- لینک به تلگرام -->
-        <a href="https://t.me/Free_lanc00" target="_blank">
-            <i class="fab fa-telegram"></i> تلگرام
-        </a>
-
-        <!-- لینک به اینستاگرام -->
-        <a href="https://www.instagram.com/erin.java8" target="_blank">
-            <i class="fab fa-instagram"></i> اینستاگرام
-        </a>
-    </div>
-</section>
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت فریلنسری من</title>
-    <!-- اضافه کردن FontAwesome برای آیکن‌ها -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- استفاده از فونت‌های جذاب از Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- هدر سایت -->
-    <header class="header">
-        <div class="logo">Sheri Freelance</div>
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#portfolio">نمونه کارها</a>
-            <a href="#about">درباره من</a>
-            <a href="#contact">تماس با من</a>
-        </nav>
-    </header>
-
-    <!-- صفحه اصلی -->
-    <section id="home" class="hero">
-        <div class="hero-content">
+    <!-- بخش خانه -->
+    <section id="home" class="home">
+        <div class="home-content">
             <h1>به سایت فریلنسری من خوش آمدید!</h1>
-            <p>با تخصص در ترجمه، طراحی لوگو و مشاوره آنلاین، می‌توانم به شما کمک کنم.</p>
-            <a href="#contact" class="cta-button">همین حالا سفارش دهید</a>
+            <p>اگر به دنبال ترجمه حرفه‌ای، طراحی لوگو یا هر نوع کار آنلاین هستید، درست آمده‌اید!</p>
+            <a href="#contact" class="cta-btn">تماس با من</a>
         </div>
     </section>
 
     <!-- بخش نمونه کارها -->
     <section id="portfolio" class="portfolio">
         <h2>نمونه کارهای من</h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item">
-                <img src="image1.jpg" alt="نمونه کار 1">
-                <p>ترجمه پروژه X</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="image2.jpg" alt="نمونه کار 2">
-                <p>طراحی لوگو Y</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="image3.jpg" alt="نمونه کار 3">
-                <p>مشاوره آنلاین</p>
-            </div>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item"><img src="image1.jpg" alt="نمونه کار 1"></div>
+            <div class="portfolio-item"><img src="image2.jpg" alt="نمونه کار 2"></div>
+            <div class="portfolio-item"><img src="image3.jpg" alt="نمونه کار 3"></div>
         </div>
     </section>
 
-    <!-- بخش درباره من -->
-    <section id="about" class="about">
-        <h2>درباره من</h2>
-        <p>من Sheri هستم. یک فریلنسر با تجربه در زمینه‌های ترجمه، طراحی گرافیک و مشاوره آنلاین.</p>
-    </section>
-
-    <!-- بخش ارتباط با من -->
+    <!-- بخش تماس با من -->
     <section id="contact" class="contact">
         <h2>تماس با من</h2>
-        <div class="contact-info">
-            <a href="https://t.me/Free_lanc00" target="_blank" class="social-icon"><i class="fab fa-telegram"></i> تلگرام</a>
-            <a href="https://www.instagram.com/erin.java8" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> اینستاگرام</a>
+        <p>برای سفارش کار و ارتباط با من می‌توانید از لینک‌های زیر استفاده کنید:</p>
+        <div class="social-links">
+            <a href="https://t.me/Free_lanc00" target="_blank"><i class="fab fa-telegram"></i> تلگرام</a>
+            <a href="https://instagram.com/erin.java8" target="_blank"><i class="fab fa-instagram"></i> اینستاگرام</a>
         </div>
-        <p>برای مشاوره و سفارش، لطفا با من تماس بگیرید.</p>
     </section>
 
-    <!-- فوتر -->
     <footer>
-        <p>&copy; 2025 Sheri. تمام حقوق محفوظ است.</p>
+        <p>&copy; 2025 تمام حقوق محفوظ است.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
-<section id="upload" class="upload">
-    <h2>آپلود عکس‌های شما</h2>
-    <p>عکس‌های مورد نظر خود را برای نمایش در سایت آپلود کنید.</p>
-    <div class="upload-container">
-        <div class="upload-area">
-            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
-            <label for="fileInput" class="upload-label">
-                <i class="fas fa-cloud-upload-alt"></i> انتخاب فایل
-            </label>
-            <div id="imagePreview" class="image-preview">
-                <img src="" alt="Preview" id="previewImage" style="display: none;">
-            </div>
-        </div>
-    </div>
-</section>
