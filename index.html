@@ -7,6 +7,10 @@
     <meta name="keywords" content="ترجمه, ویرایش متن, طراحی لوگو, فریلنسری, Sheri">
     <meta name="author" content="Sheri">
     <title>Sheri - خدمات فریلنسری</title>
+
+    <!-- لینک CSS برای Lightbox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,7 +18,6 @@
             padding: 0;
             background: linear-gradient(to bottom, #1a1a1a, #3c3c3c);
             color: #fff;
-            transition: background 0.3s ease;
         }
         header {
             background: #ff6600;
@@ -26,10 +29,6 @@
             font-size: 36px;
             font-weight: bold;
         }
-        header p {
-            font-size: 18px;
-            margin-top: 10px;
-        }
         section {
             padding: 40px 20px;
             text-align: center;
@@ -38,18 +37,13 @@
             font-size: 28px;
             color: #f2f2f2;
         }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-            color: #ccc;
-        }
-        .services, .testimonials, .portfolio, .faq {
+        .portfolio {
             display: flex;
             justify-content: center;
             gap: 50px;
             flex-wrap: wrap;
         }
-        .service-item, .testimonial-item, .portfolio-item, .faq-item {
+        .portfolio-item {
             background: #333;
             padding: 20px;
             border-radius: 8px;
@@ -58,13 +52,10 @@
             margin-bottom: 20px;
             transition: transform 0.3s;
         }
-        .service-item:hover, .testimonial-item:hover, .portfolio-item:hover {
+        .portfolio-item:hover {
             transform: scale(1.05);
         }
-        .service-item h3, .testimonial-item h3, .faq-item h3 {
-            color: #ff6600;
-        }
-        .service-item img, .portfolio-item img {
+        .portfolio-item img {
             width: 100%;
             height: auto;
             border-radius: 8px;
@@ -81,87 +72,65 @@
             color: white;
             cursor: pointer;
             margin: 10px;
-            transition: background-color 0.3s;
         }
         .contact-button a {
             text-decoration: none;
             color: white;
         }
-        .contact-button:hover {
-            background-color: #ff4500;
+        .testimonial-form input, .testimonial-form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
-        .portfolio-item {
-            border: 1px solid #444;
+        .testimonial-form button {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .faq-item {
-            background: #222;
-        }
-        .faq-item p {
-            color: #aaa;
+        .testimonial-list {
+            margin-top: 30px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Sheri - خدمات فریلنسری</h1>
         <p>ترجمه، ویرایش متن و ساخت لوگو</p>
     </header>
 
     <section>
-        <h2>خدمات من</h2>
-        <p>من می‌توانم به شما کمک کنم تا پروژه‌های خود را با کیفیت بالا انجام دهید. در اینجا برخی از خدمات من آورده شده است:</p>
-        <div class="services">
-            <div class="service-item">
-                <h3>ترجمه</h3>
-                <img src="https://via.placeholder.com/250x150.png?text=ترجمه" alt="ترجمه">
-                <p>ترجمه دقیق و حرفه‌ای متن‌ها به زبان‌های مختلف.</p>
-            </div>
-            <div class="service-item">
-                <h3>ویرایش متن</h3>
-                <img src="https://via.placeholder.com/250x150.png?text=ویرایش+متن" alt="ویرایش متن">
-                <p>ویرایش و اصلاح متن‌ها برای بهبود کیفیت و روان بودن.</p>
-            </div>
-            <div class="service-item">
-                <h3>طراحی لوگو</h3>
-                <img src="https://via.placeholder.com/250x150.png?text=طراحی+لوگو" alt="طراحی لوگو">
-                <p>طراحی لوگوهای منحصر به فرد و جذاب برای برند شما.</p>
-            </div>
-        </div>
-
         <h2>نمونه کارها</h2>
         <div class="portfolio">
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار1" alt="نمونه کار 1">
+                <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار1" data-lightbox="portfolio" data-title="لوگو 1">
+                    <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار1" alt="نمونه کار 1">
+                </a>
                 <h3>لوگو 1</h3>
             </div>
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار2" alt="نمونه کار 2">
+                <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار2" data-lightbox="portfolio" data-title="لوگو 2">
+                    <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار2" alt="نمونه کار 2">
+                </a>
                 <h3>لوگو 2</h3>
             </div>
         </div>
 
         <h2>نظرات مشتریان</h2>
-        <div class="testimonials">
-            <div class="testimonial-item">
-                <h3>مشتری 1</h3>
-                <p>خدمات عالی! ترجمه به بهترین نحو انجام شد.</p>
-            </div>
-            <div class="testimonial-item">
-                <h3>مشتری 2</h3>
-                <p>طراحی لوگو فوق‌العاده‌ای داشتم. بسیار راضی‌ام!</p>
-            </div>
+        <div class="testimonial-form">
+            <input type="text" id="name" placeholder="نام شما" required><br>
+            <textarea id="testimonial" placeholder="نظر خود را وارد کنید" required></textarea><br>
+            <button onclick="submitTestimonial()">ارسال نظر</button>
         </div>
 
-        <h2>سوالات متداول</h2>
-        <div class="faq">
-            <div class="faq-item">
-                <h3>چطور می‌توانم سفارش دهم؟</h3>
-                <p>شما می‌توانید از طریق دکمه‌های زیر با من در تماس باشید.</p>
-            </div>
-            <div class="faq-item">
-                <h3>آیا ترجمه‌ها سریع انجام می‌شود؟</h3>
-                <p>بله، من در کمترین زمان ممکن ترجمه‌ها را تحویل می‌دهم.</p>
-            </div>
+        <div class="testimonial-list" id="testimonial-output">
+            <!-- نظرات مشتریان اینجا نمایش داده می‌شود -->
         </div>
 
         <div class="contact-buttons">
@@ -169,41 +138,25 @@
             <button class="contact-button"><a href="https://www.instagram.com/erin.java8" target="_blank">تماس در اینستاگرام</a></button>
         </div>
     </section>
+
+    <!-- لینک JS برای Lightbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <script>
+        function submitTestimonial() {
+            var name = document.getElementById("name").value;
+            var testimonial = document.getElementById("testimonial").value;
+            if(name && testimonial) {
+                var output = document.getElementById("testimonial-output");
+                var newTestimonial = `<div><h3>${name}</h3><p>${testimonial}</p></div><hr>`;
+                output.innerHTML += newTestimonial;
+                document.getElementById("name").value = "";
+                document.getElementById("testimonial").value = "";
+            } else {
+                alert("لطفاً تمام فیلدها را پر کنید!");
+            }
+        }
+    </script>
+
 </body>
 </html>
-<h2>نظرات مشتریان</h2>
-<form id="testimonial-form">
-    <input type="text" id="name" placeholder="نام شما" required><br><br>
-    <textarea id="testimonial" placeholder="نظر خود را وارد کنید" required></textarea><br><br>
-    <button type="submit" class="contact-button">ارسال نظر</button>
-</form>
-<div id="testimonial-output"></div>
-
-<script>
-    document.getElementById("testimonial-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-        const name = document.getElementById("name").value;
-        const testimonial = document.getElementById("testimonial").value;
-        const output = document.getElementById("testimonial-output");
-        output.innerHTML = `<h3>نظر جدید از ${name}</h3><p>${testimonial}</p>`;
-    });
-</script>
-<h2>نمونه کارها</h2>
-<div class="portfolio">
-    <div class="portfolio-item">
-        <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار1" target="_blank">
-            <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار1" alt="نمونه کار 1">
-        </a>
-        <h3>لوگو 1</h3>
-    </div>
-    <div class="portfolio-item">
-        <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار2" target="_blank">
-            <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار2" alt="نمونه کار 2">
-        </a>
-        <h3>لوگو 2</h3>
-    </div>
-</div>
-<div class="contact-buttons">
-    <button class="contact-button"><a href="https://t.me/Free_lancer00" target="_blank" style="color: white;">تماس در تلگرام</a></button>
-    <button class="contact-button"><a href="https://www.instagram.com/erin.java8" target="_blank" style="color: white;">تماس در اینستاگرام</a></button>
-</div>
