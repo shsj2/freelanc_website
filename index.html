@@ -2,93 +2,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Sheri Freelance Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+            color: #333;
+            text-align: center;
+            padding: 0;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 30px 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #ff6f61;
+            margin: 0;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0 30px;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .telegram {
+            background-color: #0088cc;
+        }
+        .instagram {
+            background-color: #e4405f;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen font-sans"><!-- Header with Social Links --><header class="text-white text-center py-6 bg-gray-800 shadow-lg">
-    <h1 class="text-5xl font-bold">Welcome to My Freelance World</h1>
-    <p class="text-lg mt-2">Creative. Professional. Unique.</p>
-    <div class="mt-4 flex justify-center space-x-4">
-        <a href="https://www.instagram.com/erin.java8" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            🌸 Follow me on Instagram
-        </a>
-        <a href="https://t.me/Free_lancer00" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
-            💬 Message me on Telegram
-        </a>
+<body>
+    <div class="header">
+        <h1>SH Freelance</h1>
+        <p>Professional Translation, Text Editing, and Logo Design</p>
+    </div><div class="services">
+    <div class="service">
+        <h2>🌍 Translation</h2>
+        <p>Accurate and high-quality translation for your content.</p>
     </div>
-</header><!-- Main Section --><main class="container mx-auto px-6">
-    <section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
-        <h2 class="text-3xl font-semibold text-center text-gray-800">My Services</h2>
-        <div class="grid md:grid-cols-3 gap-6 mt-6">
-            <div class="p-6 bg-gradient-to-r from-blue-400 to-green-400 rounded-xl text-white text-center">
-                <h3 class="text-xl font-bold">Translation</h3>
-                <p class="mt-2">Accurate and fast translation for your needs.</p>
-            </div>
-            <div class="p-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-xl text-white text-center">
-                <h3 class="text-xl font-bold">Content Writing</h3>
-                <p class="mt-2">Engaging and creative content for websites and blogs.</p>
-            </div>
-            <div class="p-6 bg-gradient-to-r from-pink-400 to-red-400 rounded-xl text-white text-center">
-                <h3 class="text-xl font-bold">Logo Design</h3>
-                <p class="mt-2">Unique logos to represent your brand identity.</p>
-            </div>
-        </div>
-    </section><section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-center text-gray-800">Portfolio</h2>
-    <div class="grid md:grid-cols-2 gap-6 mt-6">
-        <img src="https://via.placeholder.com/400" alt="Project 1" class="rounded-xl shadow-lg">
-        <img src="https://via.placeholder.com/400" alt="Project 2" class="rounded-xl shadow-lg">
+    <div class="service">
+        <h2>✍️ Text Editing</h2>
+        <p>Polish your writing to perfection with expert editing.</p>
     </div>
-</section>
-
-<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-center text-gray-800">Upload Your Content</h2>
-    <form class="mt-6" enctype="multipart/form-data">
-        <div class="mb-4">
-            <label class="block text-gray-700">Upload Image</label>
-            <input type="file" class="w-full p-2 border rounded-xl">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700">Add Description</label>
-            <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-xl">Upload</button>
-    </form>
-</section>
-
-<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-center text-gray-800">Customer Order Form</h2>
-    <form class="mt-6">
-        <div class="mb-4">
-            <label class="block text-gray-700">Name</label>
-            <input type="text" class="w-full p-2 border rounded-xl">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700">Order Details</label>
-            <textarea class="w-full p-2 border rounded-xl" rows="4"></textarea>
-        </div>
-        <button type="submit" class="bg-green-500 text-white py-2 px-4 rounded-xl">Submit Order</button>
-    </form>
-</section>
-
-</main><!-- Footer --><footer class="text-white text-center py-6 mt-10">
-    <p>&copy; 2025 Sheri Freelance. All rights reserved.</p>
-</footer></body>
-</html>
-<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
-    <h2 class="text-3xl font-semibold text-center text-gray-800">Upload Your Content</h2>
-    <form class="mt-6" action="upload.php" method="POST" enctype="multipart/form-data">
-        <div class="mb-4">
-            <label class="block text-gray-700">Upload Image</label>
-            <input type="file" name="image" class="w-full p-2 border rounded-xl">
-        </div>
-        <div class="mb-4">
-            <label class="block text-gray-700">Add Description</label>
-            <textarea name="description" class="w-full p-2 border rounded-xl" rows="4"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-xl">Upload</button>
-    </form>
-</section>
-<div class="background-item">
-    <h1 class="logo-text">SH</h1>
+    <div class="service">
+        <h2>🎨 Logo Design</h2>
+        <p>Creative and unique logos to represent your brand.</p>
+    </div>
 </div>
+
+<div class="buttons">
+    <a href="https://t.me/Free_lancer00" class="button telegram" target="_blank">Contact on Telegram</a>
+    <a href="https://www.instagram.com/erin.java8" class="button instagram" target="_blank">Visit Instagram</a>
+</div>
+
+<footer>
+    <p>&copy; 2025 Sheri Freelance. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
