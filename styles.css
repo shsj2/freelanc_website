@@ -207,3 +207,14 @@ footer {
 #uploadForm button:hover {
     background-color: #FF4500;
 }
+.background-item {
+    width: 100%;
+    height: 400px;
+    background-image: url('A_creative_and_beautiful_logo_featuring_the_letter.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0
