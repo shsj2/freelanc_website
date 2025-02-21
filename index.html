@@ -1,4 +1,267 @@
-<form id="uploadForm" action="" method="POST" enctype="multipart/form-data">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f79c42;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-items {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 48%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #f79c42;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #f79c42;
+    border-bottom-color: transparent;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f79c42;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}</style></head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Freelance Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Services I Offer</h2>
+            <div class="service-card">
+                <h3>Translation</h3>
+                <p>Accurate and professional translation services.</p>
+            </div>
+            <div class="service-card">
+                <h3>Content Writing</h3>
+                <p>Creative and engaging content for your website and blog.</p>
+            </div>
+            <div class="service-card">
+                <h3>Logo Design</h3>
+                <p>Unique and memorable logo designs tailored to your brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Project 1</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Project 2</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for any project inquiries!</p>
+            <a href="https://www.instagram.com/yourusername" target="_blank" class="social-link">Instagram</a>
+            <a href="https://t.me/yourusername" target="_blank" class="social-link">Telegram</a>
+
+            <h3>Send me a message:</h3>
+            <form action="submit_form.php" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+', function (e) {
+    e.preventDefault(); // جلوگیری از ارسال فرم به صورت معمولی
+    
+    var text = document.getElementById('text').value; // گرفتن متن وارد شده
+    var image = document.getElementById('image').files[0]; // گرفتن تصویر انتخاب شده
+    
+    if (text &amp;&amp; image) {
+        // نمایش متن وارد شده
+        document.getElementById('uploaded-text').textContent = text;
+        
+        // نمایش تصویر آپلود شده
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('uploaded-image').src = e.target.result;
+        };
+        reader.readAsDataURL(image);
+    }
+});<form id="uploadForm" action="" method="POST" enctype="multipart/form-data">
     <label for="text">متن خود را وارد کنید:</label>
     <input type="text" id="text" name="text" placeholder="متن خود را وارد کنید" required>
     
@@ -10,5 +273,22 @@
 
 <div id="uploaded-content">
     <p id="uploaded-text"></p>
-    <img id="uploaded-image" src="" alt="تصویر آپلود شده" />
-</div>
+    <img id="uploaded-image" src="" alt="تصویر آپلود شده">
+</div><script type="text/javascript" id="dcoder_script">document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    var text = document.querySelector('input[name="text"]').value;
+    var image = document.querySelector('input[name="image"]').files[0];
+    
+    if (text && image) {
+        // نمایش متن
+        document.querySelector('#uploaded-text').textContent = text;
+
+        // نمایش تصویر
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            document.querySelector('#uploaded-image').src = e.target.result;
+        };
+        reader.readAsDataURL(image);
+    }
+});</script></body></html>
