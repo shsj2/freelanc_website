@@ -1,0 +1,14 @@
+<form id="uploadForm" action="" method="POST" enctype="multipart/form-data">
+    <label for="text">متن خود را وارد کنید:</label>
+    <input type="text" id="text" name="text" placeholder="متن خود را وارد کنید" required>
+    
+    <label for="image">تصویر خود را آپلود کنید:</label>
+    <input type="file" id="image" name="image" accept="image/*" required>
+    
+    <button type="submit">آپلود</button>
+</form>
+
+<div id="uploaded-content">
+    <p id="uploaded-text"></p>
+    <img id="uploaded-image" src="" alt="تصویر آپلود شده" />
+</div>
