@@ -1,294 +1,97 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    <title>سایت فریلنسری من</title>
     <link rel="stylesheet" href="styles.css">
-<style type="text/css" id="dcoder_stylesheet">* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-header .container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    font-size: 28px;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f79c42;
-}
-
-.section {
-    padding: 50px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.service-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-}
-
-.portfolio-items {
-    display: flex;
-    gap: 20px;
-}
-
-.portfolio-item {
-    width: 48%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-    opacity: 1;
-}
-
-.social-link {
-    display: inline-block;
-    margin: 10px 20px;
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 2px solid #f79c42;
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
-}
-
-.social-link:hover {
-    color: #f79c42;
-    border-bottom-color: transparent;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #f79c42;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}</style></head>
+</head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>Welcome to My Freelance Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <h1>سایت فریلنسری من</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#portfolio">نمونه کارها</a></li>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#contact">تماس با من</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="services" class="section">
-        <div class="container">
-            <h2>Services I Offer</h2>
-            <div class="service-card">
-                <h3>Translation</h3>
-                <p>Accurate and professional translation services.</p>
-            </div>
-            <div class="service-card">
-                <h3>Content Writing</h3>
-                <p>Creative and engaging content for your website and blog.</p>
-            </div>
-            <div class="service-card">
-                <h3>Logo Design</h3>
-                <p>Unique and memorable logo designs tailored to your brand.</p>
-            </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>خوش آمدید به سایت من</h2>
+        <p>من Sheri هستم، یک فریلنسر با تجربه در زمینه ترجمه، طراحی لوگو و ساخت محتوای دیجیتال. در اینجا می‌توانید نمونه کارهای من را مشاهده کنید و با من در ارتباط باشید.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>نمونه کارها</h2>
+        <div class="portfolio-item">
+            <img src="sample1.jpg" alt="نمونه کار 1">
+            <p>ترجمه مقاله</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="sample2.jpg" alt="نمونه کار 2">
+            <p>طراحی لوگو</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="sample3.jpg" alt="نمونه کار 3">
+            <p>نوشتن محتوا</p>
         </div>
     </section>
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>Project 1</h3>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Project 2</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2>درباره من</h2>
+        <p>من چندین سال تجربه در زمینه‌های مختلف فریلنسری دارم و از طریق سایت‌های آنلاین کار می‌کنم. من آماده‌ام که پروژه‌های شما را با بهترین کیفیت انجام دهم.</p>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out for any project inquiries!</p>
-            <a href="https://www.instagram.com/yourusername" target="_blank" class="social-link">Instagram</a>
-            <a href="https://t.me/yourusername" target="_blank" class="social-link">Telegram</a>
-
-            <h3>Send me a message:</h3>
-            <form action="submit_form.php" method="POST">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>تماس با من</h2>
+        <p>برای سفارش کار یا هرگونه سوال، می‌توانید از طریق تلگرام یا اینستاگرام با من در تماس باشید.</p>
+        <div class="social-links">
+            <a href="https://t.me/your-telegram-link" target="_blank">تلگرام</a>
+            <a href="https://instagram.com/your-instagram-link" target="_blank">اینستاگرام</a>
         </div>
+        <form action="" method="POST">
+            <label for="name">نام شما:</label>
+            <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید" required>
+            <label for="message">پیام شما:</label>
+            <textarea id="message" name="message" placeholder="پیام خود را بنویسید" required></textarea>
+            <button type="submit">ارسال</button>
+        </form>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>© 2025 Your Name. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 Sheri. All Rights Reserved.</p>
     </footer>
+</body>
+</html>
+<!-- قسمتی برای آپلود عکس و متن -->
+<section id="upload-section">
+    <h2>آپلود نمونه کار</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="image">تصویر:</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
 
-', function (e) {
-    e.preventDefault(); // جلوگیری از ارسال فرم به صورت معمولی
-    
-    var text = document.getElementById('text').value; // گرفتن متن وارد شده
-    var image = document.getElementById('image').files[0]; // گرفتن تصویر انتخاب شده
-    
-    if (text &amp;&amp; image) {
-        // نمایش متن وارد شده
-        document.getElementById('uploaded-text').textContent = text;
-        
-        // نمایش تصویر آپلود شده
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            document.getElementById('uploaded-image').src = e.target.result;
-        };
-        reader.readAsDataURL(image);
-    }
-});<form id="uploadForm" action="" method="POST" enctype="multipart/form-data">
-    <label for="text">متن خود را وارد کنید:</label>
-    <input type="text" id="text" name="text" placeholder="متن خود را وارد کنید" required>
-    
-    <label for="image">تصویر خود را آپلود کنید:</label>
-    <input type="file" id="image" name="image" accept="image/*" required>
-    
-    <button type="submit">آپلود</button>
-</form>
+        <label for="text">متن:</label>
+        <input type="text" id="text" name="text" placeholder="متن خود را وارد کنید" required><br><br>
 
-<div id="uploaded-content">
-    <p id="uploaded-text"></p>
-    <img id="uploaded-image" src="" alt="تصویر آپلود شده">
-</div><script type="text/javascript" id="dcoder_script">document.querySelector('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    
-    var text = document.querySelector('input[name="text"]').value;
-    var image = document.querySelector('input[name="image"]').files[0];
-    
-    if (text && image) {
-        // نمایش متن
-        document.querySelector('#uploaded-text').textContent = text;
+        <button type="submit">آپلود</button>
+    </form>
 
-        // نمایش تصویر
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            document.querySelector('#uploaded-image').src = e.target.result;
-        };
-        reader.readAsDataURL(image);
-    }
-});</script></body></html>
+    <div id="uploaded-content">
+        <h3>محتوای آپلود شده:</h3>
+        <div id="uploaded-image-container">
+            <img id="uploaded-image" src="" alt="تصویر آپلود شده" />
+        </div>
+        <p id="uploaded-text"></p>
+    </div>
+</section>
