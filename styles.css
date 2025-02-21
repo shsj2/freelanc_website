@@ -171,3 +171,155 @@ footer {
 .social-icons a:hover {
     color: #0077b5; /* رنگ تغییر کرده به آبی برای اینستاگرام */
 }
+/* تنظیمات اولیه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* هدر */
+.header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFD700; /* رنگ طلایی برای جذابیت بیشتر */
+}
+
+.header nav a {
+    color: #fff;
+    margin: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #FFD700;
+}
+
+/* صفحه اصلی */
+.hero {
+    background: linear-gradient(to right, #00BFFF, #1E90FF); /* ترکیب رنگ‌های آبی و فیروزه‌ای */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+}
+
+/* بخش نمونه کارها */
+.portfolio {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* بخش درباره من */
+.about {
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* بخش ارتباط با من */
+.contact {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #00BFFF;
+}
+
+/* فوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
