@@ -58,3 +58,19 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- بخش نمونه کارها و آپلود -->
+<section id="portfolio" class="portfolio">
+    <h2>نمونه کارهای من</h2>
+    <div class="portfolio-gallery" id="gallery">
+        <!-- اینجا تصاویر آپلود شده نمایش داده می‌شود -->
+    </div>
+
+    <h3>آپلود نمونه کار جدید</h3>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="imageUpload">انتخاب تصویر:</label>
+        <input type="file" id="imageUpload" name="image" accept="image/*">
+        <label for="description">توضیحات تصویر:</label>
+        <textarea id="description" name="description" rows="4" placeholder="توضیحاتی درباره این تصویر بنویسید"></textarea>
+        <button type="submit">آپلود</button>
+    </form>
+</section>
