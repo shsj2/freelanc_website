@@ -1,162 +1,198 @@
+بسیار عالی! در اینجا یک نمونه کد HTML، CSS و JavaScript برای ساخت یک سایت شخصی ساده برای نمایش نمونه کارهای طراحی لوگو، با تمرکز بر زیبایی و رنگ‌های جذاب، و امکان ارتباط با مشتریان از طریق تلگرام و اینستاگرام ارائه می‌کنم.
+1. HTML (index.html):
 <!DOCTYPE html>
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sheri - خدمات ترجمه، ویرایش متن و طراحی لوگو. تماس با من برای پروژه‌های فریلنسری با کیفیت.">
-    <meta name="keywords" content="ترجمه, ویرایش متن, طراحی لوگو, فریلنسری, Sheri">
-    <meta name="author" content="Sheri">
-    <title>Sheri - خدمات فریلنسری</title>
-
-    <!-- لینک CSS برای Lightbox -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #1a1a1a, #3c3c3c);
-            color: #fff;
-        }
-        header {
-            background: #ff6600;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        header h1 {
-            font-size: 36px;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        h2, h3 {
-            font-size: 28px;
-            color: #f2f2f2;
-        }
-        .portfolio {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-        .portfolio-item {
-            background: #333;
-            padding: 20px;
-            border-radius: 8px;
-            width: 250px;
-            text-align: center;
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
-        .portfolio-item:hover {
-            transform: scale(1.05);
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .contact-buttons {
-            margin-top: 30px;
-        }
-        .contact-button {
-            background-color: #ff6600;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            color: white;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .contact-button a {
-            text-decoration: none;
-            color: white;
-        }
-        .testimonial-form input, .testimonial-form textarea {
-            padding: 10px;
-            margin: 10px 0;
-            width: 100%;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .testimonial-form button {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .testimonial-list {
-            margin-top: 30px;
-            text-align: left;
-        }
-    </style>
+    <title>نمونه کارهای طراحی لوگو | [نام شما]</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Sheri - خدمات فریلنسری</h1>
-        <p>ترجمه، ویرایش متن و ساخت لوگو</p>
+        <h1>[نام شما] | طراح لوگو</h1>
+        <nav>
+            <a href="#portfolio">نمونه کارها</a>
+            <a href="#testimonials">نظرات مشتریان</a>
+            <a href="#contact">تماس با من</a>
+        </nav>
     </header>
 
-    <section>
-        <h2>نمونه کارها</h2>
-        <div class="portfolio">
-            <div class="portfolio-item">
-                <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار1" data-lightbox="portfolio" data-title="لوگو 1">
-                    <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار1" alt="نمونه کار 1">
-                </a>
-                <h3>لوگو 1</h3>
-            </div>
-            <div class="portfolio-item">
-                <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار2" data-lightbox="portfolio" data-title="لوگو 2">
-                    <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار2" alt="نمونه کار 2">
-                </a>
-                <h3>لوگو 2</h3>
-            </div>
-        </div>
-
-        <h2>نظرات مشتریان</h2>
-        <div class="testimonial-form">
-            <input type="text" id="name" placeholder="نام شما" required><br>
-            <textarea id="testimonial" placeholder="نظر خود را وارد کنید" required></textarea><br>
-            <button onclick="submitTestimonial()">ارسال نظر</button>
-        </div>
-
-        <div class="testimonial-list" id="testimonial-output">
-            <!-- نظرات مشتریان اینجا نمایش داده می‌شود -->
-        </div>
-
-        <div class="contact-buttons">
-            <button class="contact-button"><a href="https://t.me/Free_lancer00" target="_blank">تماس در تلگرام</a></button>
-            <button class="contact-button"><a href="https://www.instagram.com/erin.java8" target="_blank">تماس در اینستاگرام</a></button>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>طراحی لوگوهای مدرن و خلاقانه</h2>
+            <p>با من، برند شما به یک هویت بصری منحصر به فرد دست پیدا می‌کند.</p>
+            <a href="#contact" class="btn">درخواست سفارش</a>
         </div>
     </section>
 
-    <!-- لینک JS برای Lightbox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <section id="portfolio">
+        <h2>نمونه کارها</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="logo1.jpg" alt="لوگو 1">
+                <div class="overlay">
+                    <h3>نام لوگو 1</h3>
+                    <p>توضیحات کوتاه درباره لوگو</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="logo2.jpg" alt="لوگو 2">
+                <div class="overlay">
+                    <h3>نام لوگو 2</h3>
+                    <p>توضیحات کوتاه درباره لوگو</p>
+                </div>
+            </div>
+            </div>
+    </section>
 
-    <script>
-        function submitTestimonial() {
-            var name = document.getElementById("name").value;
-            var testimonial = document.getElementById("testimonial").value;
-            if(name && testimonial) {
-                var output = document.getElementById("testimonial-output");
-                var newTestimonial = `<div><h3>${name}</h3><p>${testimonial}</p></div><hr>`;
-                output.innerHTML += newTestimonial;
-                document.getElementById("name").value = "";
-                document.getElementById("testimonial").value = "";
-            } else {
-                alert("لطفاً تمام فیلدها را پر کنید!");
-            }
-        }
-    </script>
+    <section id="testimonials">
+        <h2>نظرات مشتریان</h2>
+        <div class="testimonial">
+            <p>"از طراحی لوگو بسیار راضی هستم. کار ایشان بسیار حرفه‌ای و خلاقانه بود."</p>
+            <p>- مشتری 1</p>
+        </div>
+        </section>
 
+    <section id="contact">
+        <h2>تماس با من</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="نام شما" required>
+            <input type="email" name="email" placeholder="ایمیل شما" required>
+            <textarea name="message" placeholder="پیام شما" required></textarea>
+            <button type="submit" class="btn">ارسال پیام</button>
+        </form>
+        <div class="social-links">
+            <a href="https://t.me/Free_lancer00" target="_blank">تلگرام</a>
+            <a href="https://instagram.com/erin.java8" target="_blank">اینستاگرام</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 1402 [نام شما] | طراحی لوگو</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+2. CSS (style.css):
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#hero {
+    background-image: url('hero-bg.jpg'); /* جایگزین با تصویر پس‌زمینه */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    display: inline-block;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#portfolio, #testimonials, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+3. JavaScript (script.js):
+// اضافه کردن تعاملات جاوا اسکریپت در صورت نیاز
+
+نکات مهم:
+ * تصاویر نمونه کارهای خود را در پوشه پروژه قرار دهید و نام فایل‌ها را در کد HTML جایگزین کنید.
+ * تصویر پس‌زمینه بخش hero را با تصویر دلخواه خود جایگزین کنید.
+ * اطلاعات شخصی، نظرات مشتریان و لینک‌های شبکه‌های اجتماعی خود را در کد HTML جایگزین کنید.
+ * برای طراحی بهتر، می‌توانید از فریم‌ورک‌های CSS مانند Bootstrap یا Tailwind CSS استفاده کنید.
+ * برای افزودن تعاملات بیشتر، می‌توانید از جاوا اسکریپت استفاده کنید.
+ * برای ارسال فرم تماس با من، نیاز به یک بک‌اند دارید. می‌توانید از Node.js یا Python برای این کار استفاده کنید.
+این کد یک نقطه شروع برای ساخت سایت شماست. شما می‌توانید آن را با توجه به نیازها و سلیقه خود تغییر دهید و بهبود بخشید.
+
