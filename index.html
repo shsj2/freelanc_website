@@ -171,3 +171,39 @@
     </section>
 </body>
 </html>
+<h2>نظرات مشتریان</h2>
+<form id="testimonial-form">
+    <input type="text" id="name" placeholder="نام شما" required><br><br>
+    <textarea id="testimonial" placeholder="نظر خود را وارد کنید" required></textarea><br><br>
+    <button type="submit" class="contact-button">ارسال نظر</button>
+</form>
+<div id="testimonial-output"></div>
+
+<script>
+    document.getElementById("testimonial-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const testimonial = document.getElementById("testimonial").value;
+        const output = document.getElementById("testimonial-output");
+        output.innerHTML = `<h3>نظر جدید از ${name}</h3><p>${testimonial}</p>`;
+    });
+</script>
+<h2>نمونه کارها</h2>
+<div class="portfolio">
+    <div class="portfolio-item">
+        <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار1" target="_blank">
+            <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار1" alt="نمونه کار 1">
+        </a>
+        <h3>لوگو 1</h3>
+    </div>
+    <div class="portfolio-item">
+        <a href="https://via.placeholder.com/500x300.png?text=نمونه+کار2" target="_blank">
+            <img src="https://via.placeholder.com/250x150.png?text=نمونه+کار2" alt="نمونه کار 2">
+        </a>
+        <h3>لوگو 2</h3>
+    </div>
+</div>
+<div class="contact-buttons">
+    <button class="contact-button"><a href="https://t.me/Free_lancer00" target="_blank" style="color: white;">تماس در تلگرام</a></button>
+    <button class="contact-button"><a href="https://www.instagram.com/erin.java8" target="_blank" style="color: white;">تماس در اینستاگرام</a></button>
+</div>
