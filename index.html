@@ -75,3 +75,17 @@
     <p>&copy; 2025 Sheri Freelance. All rights reserved.</p>
 </footer></body>
 </html>
+<section class="bg-white rounded-2xl shadow-2xl p-8 mb-10">
+    <h2 class="text-3xl font-semibold text-center text-gray-800">Upload Your Content</h2>
+    <form class="mt-6" action="upload.php" method="POST" enctype="multipart/form-data">
+        <div class="mb-4">
+            <label class="block text-gray-700">Upload Image</label>
+            <input type="file" name="image" class="w-full p-2 border rounded-xl">
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700">Add Description</label>
+            <textarea name="description" class="w-full p-2 border rounded-xl" rows="4"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-xl">Upload</button>
+    </form>
+</section>
