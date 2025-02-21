@@ -1,394 +1,151 @@
-/* Resetting default browser styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Vazir', sans-serif;
 }
 
-/* Body and General Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-/* Header Styling */
+/* هدر زیبا */
 header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-header .logo {
+    background: linear-gradient(90deg, #00BFFF, #FF6347);
+    padding: 20px 0;
     text-align: center;
-    font-size: 2rem;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 10px 0;
+    list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-}
-
-/* Home Section Styling */
-#home {
-    background: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#home h2 {
-    font-size: 2.5rem;
-}
-
-/* Portfolio Section Styling */
-#portfolio {
-    background: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#portfolio h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.portfolio-item {
-    display: inline-block;
-    margin: 20px;
-}
-
-.portfolio-item img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.portfolio-item p {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-/* About Section Styling */
-#about {
-    background: #fff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-/* Contact Section Styling */
-#contact {
-    background: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#contact form {
-    margin-top: 20px;
-}
-
-#contact label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-#contact input, #contact textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#contact button {
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background: #555;
-}
-
-/* Footer Styling */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Social Links Styling */
-.social-links a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    color: #0077cc;
-}
-#social-media {
-    text-align: center;
-    margin-top: 50px;
-}
-
-#social-media h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.social-icons a {
-    margin: 0 15px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #333;
-}
-
-.social-icons a:hover {
-    color: #0077b5; /* رنگ تغییر کرده به آبی برای اینستاگرام */
-}
-/* تنظیمات اولیه */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* هدر */
-.header {
-    background-color: #3a3a3a;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.header .logo {
-    font-size: 32px;
-    font-weight: 700;
-    color: #FFD700; /* رنگ طلایی برای جذابیت بیشتر */
-}
-
-.header nav a {
-    color: #fff;
-    margin: 0 20px;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.header nav a:hover {
-    color: #FFD700;
-}
-
-/* صفحه اصلی */
-.hero {
-    background: linear-gradient(to right, #00BFFF, #1E90FF); /* ترکیب رنگ‌های آبی و فیروزه‌ای */
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
-}
-
-.hero p {
     font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FF6347;
+}
+
+/* بخش خانه */
+.home {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    padding: 150px 20px;
+    text-align: center;
+    color: white;
+}
+
+.home h1 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     margin-bottom: 20px;
 }
 
-.cta-button {
-    background-color: #FFD700;
-    padding: 15px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #333;
-    border-radius: 5px;
+.home p {
+    font-size: 25px;
+    color: #FF6347;
+    margin-bottom: 30px;
 }
 
-.cta-button:hover {
-    background-color: #ffcc00;
+.cta-btn {
+    background-color: #FF6347;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #FF4500;
 }
 
 /* بخش نمونه کارها */
 .portfolio {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 60px 20px;
     text-align: center;
 }
 
 .portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
-.portfolio-items {
+.portfolio-gallery {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.portfolio-item {
-    width: 250px;
-    margin: 20px;
-    text-align: center;
-}
-
 .portfolio-item img {
-    width: 100%;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.portfolio-item p {
-    margin-top: 10px;
-    font-size: 18px;
+.portfolio-item img:hover {
+    transform: scale(1.05);
 }
 
-/* بخش درباره من */
-.about {
-    background-color: #00BFFF;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-/* بخش ارتباط با من */
+/* بخش تماس با من */
 .contact {
-    background-color: #fff;
+    background-color: #FF6347;
     padding: 60px 20px;
     text-align: center;
+    color: white;
 }
 
 .contact h2 {
-    font-size: 36px;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.contact-info {
-    margin-bottom: 20px;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.social-icon {
+.social-links a {
     font-size: 30px;
-    margin: 0 15px;
-    color: #333;
+    color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.social-icon:hover {
-    color: #00BFFF;
+.social-links a:hover {
+    color: #FFD700;
 }
 
 /* فوتر */
 footer {
     background-color: #333;
-    color: #fff;
-    text-align: center;
+    color: white;
     padding: 20px 0;
-}
-/* بخش آپلود عکس */
-.upload {
-    background-color: #fff;
-    padding: 60px 20px;
     text-align: center;
-    border-radius: 8px;
-    margin: 40px 0;
-}
-
-.upload h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.upload p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #666;
-}
-
-.upload-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.upload-area {
-    background-color: #f9f9f9;
-    border: 2px dashed #00BFFF;
-    padding: 30px;
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.upload-area:hover {
-    background-color: #e0f7fa;
-}
-
-.upload-label {
-    font-size: 20px;
-    color: #00BFFF;
-    cursor: pointer;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-}
-
-.upload-label:hover {
-    background-color: #00BFFF;
-    color: #fff;
-}
-
-#imagePreview {
-    margin-top: 20px;
-}
-
-#previewImage {
-    max-width: 100%;
-    max-height: 300px;
-    border-radius: 8px;
-    display: block;
-    margin-top: 20px;
 }
