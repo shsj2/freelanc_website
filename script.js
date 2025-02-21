@@ -26,3 +26,39 @@ function previewImage(event) {
     }
     reader.readAsDataURL(event.target.files[0]);
 }
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // گرفتن فایل تصویر و توضیحات
+    const imageInput = document.getElementById('imageUpload');
+    const descriptionInput = document.getElementById('description');
+
+    const file = imageInput.files[0];
+    const description = descriptionInput.value;
+
+    if (file && description) {
+        // نمایش تصویر و توضیحات در بخش گالری
+        const gallery = document.getElementById('gallery');
+
+        const newItem = document.createElement('div');
+        newItem.classList.add('portfolio-item');
+        
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);  // ایجاد URL برای تصویر آپلود شده
+        img.alt = description;
+
+        const text = document.createElement('p');
+        text.textContent = description;
+
+        newItem.appendChild(img);
+        newItem.appendChild(text);
+
+        gallery.appendChild(newItem);
+
+        // پاک کردن فرم بعد از آپلود
+        imageInput.value = '';
+        descriptionInput.value = '';
+    } else {
+        alert('لطفاً تصویر و توضیحات را وارد کنید.');
+    }
+});
