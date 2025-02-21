@@ -186,3 +186,18 @@
 
 </body>
 </html>
+<section id="upload" class="upload">
+    <h2>آپلود عکس‌های شما</h2>
+    <p>عکس‌های مورد نظر خود را برای نمایش در سایت آپلود کنید.</p>
+    <div class="upload-container">
+        <div class="upload-area">
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
+            <label for="fileInput" class="upload-label">
+                <i class="fas fa-cloud-upload-alt"></i> انتخاب فایل
+            </label>
+            <div id="imagePreview" class="image-preview">
+                <img src="" alt="Preview" id="previewImage" style="display: none;">
+            </div>
+        </div>
+    </div>
+</section>
