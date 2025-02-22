@@ -1,81 +1,96 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelancer Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
-            color: white;
-            text-align: center;
-            padding: 0;
-        }
-        header {
-            padding: 30px 0;
-            font-size: 36px;
-            background: linear-gradient(90deg, #ff7e5f, #feb47b);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        section {
-            padding: 20px;
-        }
-        .services {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background-color: #ff7e5f;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-        }
-        .buttons a:hover {
-            background-color: #feb47b;
-        }
-        .samples img {
-            width: 200px;
-            height: auto;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
-        footer {
-            padding: 10px;
-            font-size: 14px;
-            color: #ccc;
-        }
-    </style>
+    <title>خدمات ترجمه، تولید محتوا و طراحی لوگو | Sh</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- هدر سایت -->
     <header>
-        S | Sheri's Freelance Services
-    </header><section>
-    <div class="services">
-        <p>I offer professional <strong>Translation</strong>, <strong>Text Editing</strong>, and <strong>Logo Design</strong> services.</p>
-    </div>
+        <div class="logo">
+            <h1>Sh</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">صفحه اصلی</a></li>
+                <li><a href="#services">خدمات</a></li>
+                <li><a href="#portfolio">پورتفولیو</a></li>
+                <li><a href="#contact">تماس با من</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="buttons">
-        <a href="https://t.me/Free_lancer00" target="_blank">Contact on Telegram</a>
-        <a href="https://instagram.com/erin.java8" target="_blank">Contact on Instagram</a>
-    </div>
+    <!-- بخش اصلی -->
+    <section id="home">
+        <div class="hero">
+            <h2>خدمات ترجمه، تولید محتوا و طراحی لوگو</h2>
+            <p>با کیفیت و سرعت بالا، پروژه‌های خود را به ما بسپارید.</p>
+            <a href="#contact" class="cta-button">ثبت درخواست</a>
+        </div>
+    </section>
 
-    <div class="samples">
-        <h2>Sample Work</h2>
-        <img src="https://via.placeholder.com/200?text=Logo+Design" alt="Logo Sample">
-        <img src="https://via.placeholder.com/200?text=Translation" alt="Translation Sample">
-    </div>
-</section>
+    <!-- بخش خدمات -->
+    <section id="services">
+        <h2>خدمات ما</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>ترجمه تخصصی</h3>
+                <p>ترجمه متون تخصصی با بالاترین کیفیت.</p>
+            </div>
+            <div class="service-item">
+                <h3>تولید محتوا</h3>
+                <p>تولید محتوای جذاب و سئو شده.</p>
+            </div>
+            <div class="service-item">
+                <h3>ویرایش متون</h3>
+                <p>ویرایش و بازنویسی متون با دقت بالا.</p>
+            </div>
+            <div class="service-item">
+                <h3>طراحی لوگو</h3>
+                <p>طراحی لوگوهای منحصر به فرد و حرفه‌ای.</p>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    © 2025 Sheri's Freelance Services. All rights reserved.
-</footer>
+    <!-- بخش آپلود عکس و متن -->
+    <section id="upload">
+        <h2>آپلود عکس و متن</h2>
+        <form id="upload-form">
+            <input type="file" id="image-upload" accept="image/*">
+            <textarea id="text-upload" placeholder="متن خود را اینجا وارد کنید..."></textarea>
+            <button type="submit">آپلود</button>
+        </form>
+    </section>
 
+    <!-- بخش درخواست مشتری‌ها -->
+    <section id="contact">
+        <h2>ثبت درخواست</h2>
+        <form id="request-form">
+            <input type="text" id="name" placeholder="نام و نام خانوادگی" required>
+            <input type="email" id="email" placeholder="ایمیل" required>
+            <input type="tel" id="phone" placeholder="شماره تماس" required>
+            <select id="service-type" required>
+                <option value="ترجمه">ترجمه</option>
+                <option value="تولید محتوا">تولید محتوا</option>
+                <option value="ویرایش">ویرایش</option>
+                <option value="طراحی لوگو">طراحی لوگو</option>
+            </select>
+            <textarea id="details" placeholder="توضیحات بیشتر..."></textarea>
+            <button type="submit">ارسال درخواست</button>
+        </form>
+    </section>
+
+    <!-- فوتر سایت -->
+    <footer>
+        <p>تماس با من:</p>
+        <ul>
+            <li><a href="https://t.me/Free_lancer00" target="_blank">تلگرام</a></li>
+            <li><a href="https://instagram.com/erin.java8" target="_blank">اینستاگرام</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
